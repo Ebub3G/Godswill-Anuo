@@ -18,13 +18,14 @@ const AboutSection = () => {
         <div className="flex flex-col md:flex-row gap-10">
           <div className="md:w-1/2">
             <p className="text-gray-700 mb-6">
-              Hello! I'm Alex, a passionate content creator and digital designer with over 5 years of experience in creating engaging visual content for brands and individuals.
+              Hi, I'm Godswill, a passionate Content Creator and Digital Designer. I specialize in crafting clean, modern websites and eye-catching graphics that help brands and individuals stand out online.
             </p>
             <p className="text-gray-700 mb-6">
-              My journey began as a freelance graphic designer, which evolved into web design and content creation as I discovered my passion for creating cohesive digital experiences.
+              With a strong eye for detail and a love for storytelling through visuals, I design experiences that are not just beautiful — but effective. From social media visuals to full website builds, I bring ideas to life with creativity and clarity.
             </p>
             <p className="text-gray-700">
-              I believe in the power of visual storytelling and how it can transform businesses and engage audiences. Whether it's a website redesign, a brand identity, or a social media campaign, I approach each project with creativity and strategic thinking.
+              When I'm not designing, I'm learning new tools, sharing tips, or experimenting with new styles.
+              Let's build something amazing together!
             </p>
           </div>
           
