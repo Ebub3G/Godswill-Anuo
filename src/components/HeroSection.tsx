@@ -8,7 +8,7 @@ const HeroSection = () => {
         <div className="flex flex-col-reverse md:flex-row items-center">
           <div className="md:w-1/2 py-10 md:py-0 animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 text-charcoal">
-              Alex Morgan
+              Godswill Anuo
             </h1>
             <h2 className="text-xl md:text-2xl mb-6 text-amber font-medium">
               Content Creator & Digital Designer
