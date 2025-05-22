@@ -8,7 +8,7 @@ const ProjectsSection = () => {
       id: 1,
       title: "Career Coach Portfolio Website",
       description: "A responsive blog website focused on sustainable living and eco-friendly tips.",
-      image: "/lovable-uploads/9c90645b-bc31-47cf-82f6-26a3fa5e31d5.png",
+      image: "/lovable-uploads/52408f9e-3bc6-43ca-84a0-6173100314d6.png",
       technologies: ["React", "Tailwind CSS", "Netlify"],
       link: "#"
     },
