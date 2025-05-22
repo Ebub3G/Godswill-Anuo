@@ -100,7 +100,7 @@ export default {
 				'slide-in': 'slide-in 0.7s ease-out',
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
+				sans: ['Montserrat', 'sans-serif'],
 				heading: ['Montserrat', 'sans-serif'],
 			}
 		}
