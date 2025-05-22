@@ -6,7 +6,7 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "Eco-Friendly Blog",
+      title: "Career Coach Portfolio Website",
       description: "A responsive blog website focused on sustainable living and eco-friendly tips.",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1470&auto=format&fit=crop",
       technologies: ["React", "Tailwind CSS", "Netlify"],
