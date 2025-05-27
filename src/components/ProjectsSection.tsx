@@ -1,74 +1,68 @@
 
 import React from 'react';
-import { Card, CardContent } from "@/components/ui/card";
 
 const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "Career Coach Portfolio Website",
+      title: "Career Coach Portfolio",
       description: "A responsive One-Page Portfolio site for a career coach",
       image: "/lovable-uploads/52408f9e-3bc6-43ca-84a0-6173100314d6.png",
-      technologies: ["React", "Tailwind CSS", "Netlify"],
+      technologies: ["React", "Tailwind CSS"],
       link: "#"
     },
     {
       id: 2,
       title: "Coffee Shop E-commerce",
-      description: "Fully functional online store for a local coffee shop with order management.",
+      description: "Online store for a local coffee shop with order management",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=1470&auto=format&fit=crop",
-      technologies: ["Next.js", "Stripe", "Vercel"],
+      technologies: ["Next.js", "Stripe"],
       link: "#"
     },
     {
       id: 3,
-      title: "Fitness App UI",
-      description: "Mobile app interface design for a personal fitness tracking application.",
+      title: "Fitness App Interface",
+      description: "Mobile app interface design for fitness tracking",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1470&auto=format&fit=crop",
-      technologies: ["Figma", "Adobe XD", "Illustrator"],
+      technologies: ["Figma", "Adobe XD"],
       link: "#"
     }
   ];
 
   return (
-    <section id="projects" className="py-20 bg-white">
+    <section id="projects" className="py-24 bg-white">
       <div className="container-section">
-        <h2 className="section-title">Web Projects</h2>
+        <h2 className="section-title text-center">Projects</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {projects.map((project) => (
-            <Card key={project.id} className="overflow-hidden border border-gray-200 card-hover">
-              <div className="h-48 overflow-hidden">
+            <div key={project.id} className="card-hover">
+              <div className="aspect-[4/3] overflow-hidden mb-6 bg-gray-50">
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  className="w-full h-full object-cover"
                 />
               </div>
-              <CardContent className="p-6">
-                <h3 className="font-bold text-xl mb-2 text-charcoal">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech, index) => (
-                    <span 
-                      key={index} 
-                      className="bg-gray-100 text-charcoal text-xs px-2 py-1 rounded"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                <a 
-                  href={project.link} 
-                  className="text-amber-dark hover:text-amber font-medium flex items-center"
-                >
-                  View Project
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </CardContent>
-            </Card>
+              <h3 className="font-medium text-lg mb-3 text-charcoal">{project.title}</h3>
+              <p className="text-charcoal/60 mb-4 text-sm leading-relaxed">{project.description}</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.technologies.map((tech, index) => (
+                  <span 
+                    key={index} 
+                    className="text-charcoal/50 text-xs"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <a 
+                href={project.link} 
+                className="text-charcoal hover:text-charcoal/70 text-sm font-normal transition-colors"
+              >
+                View Project →
+              </a>
+            </div>
           ))}
         </div>
       </div>

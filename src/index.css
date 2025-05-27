@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 @layer base {
   :root {
@@ -16,8 +16,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 13%;
 
-    --primary: 38 100% 50%;
-    --primary-foreground: 0 0% 13%;
+    --primary: 0 0% 13%;
+    --primary-foreground: 0 0% 98%;
 
     --secondary: 0 0% 96%;
     --secondary-foreground: 0 0% 13%;
@@ -25,17 +25,17 @@
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 38 100% 50%;
-    --accent-foreground: 0 0% 13%;
+    --accent: 0 0% 13%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 0 0% 89%;
     --input: 0 0% 89%;
-    --ring: 38 100% 50%;
+    --ring: 0 0% 13%;
 
-    --radius: 0.5rem;
+    --radius: 0rem;
   }
 
   * {
@@ -43,42 +43,39 @@
   }
 
   body {
-    @apply bg-background text-foreground font-heading;
+    @apply bg-background text-foreground font-sans;
     scroll-behavior: smooth;
+    line-height: 1.6;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading;
+    @apply font-sans font-medium;
+    line-height: 1.2;
   }
 }
 
 @layer components {
   .container-section {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-4xl mx-auto px-6 sm:px-8;
   }
   
   .btn-primary {
-    @apply bg-amber hover:bg-amber-dark text-charcoal font-medium py-2.5 px-5 rounded-md transition-all duration-300 inline-flex items-center justify-center;
+    @apply bg-charcoal hover:bg-charcoal/80 text-white font-normal py-3 px-6 transition-all duration-200 inline-flex items-center justify-center border border-charcoal;
   }
   
   .btn-outline {
-    @apply border-2 border-charcoal text-charcoal hover:bg-charcoal hover:text-white font-medium py-2 px-4 rounded-md transition-all duration-300 inline-flex items-center justify-center;
+    @apply border border-charcoal text-charcoal hover:bg-charcoal hover:text-white font-normal py-3 px-6 transition-all duration-200 inline-flex items-center justify-center;
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-10 text-charcoal relative inline-block;
-  }
-
-  .section-title::after {
-    content: '';
-    @apply absolute -bottom-3 left-0 w-1/2 h-1 bg-amber;
+    @apply text-2xl md:text-3xl font-medium mb-16 text-charcoal;
   }
   
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+    @apply transition-all duration-200 hover:translate-y-[-2px];
   }
   
   .nav-link {
-    @apply px-4 py-2 text-charcoal hover:text-amber transition-colors duration-300;
+    @apply px-0 py-2 text-charcoal/70 hover:text-charcoal transition-colors duration-200 font-normal;
   }
 }
