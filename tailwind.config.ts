@@ -85,7 +85,7 @@ export default {
 				'slide-in': 'slide-in 0.8s ease-out',
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
+				sans: ['Montserrat', 'sans-serif'],
 			}
 		}
 	},
