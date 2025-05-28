@@ -38,7 +38,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="py-32 bg-white">
       <div className="container-section">
-        <div className="mb-20">
+        <div className="mb-20 text-left">
           <h2 className="text-5xl md:text-6xl font-light mb-6 text-charcoal tracking-tight">
             Selected Work
           </h2>
@@ -49,9 +49,9 @@ const ProjectsSection = () => {
         
         <div className="space-y-32">
           {projects.map((project, index) => (
-            <div key={project.id} className={`project-card ${index % 2 === 1 ? 'project-card-reverse' : ''}`}>
+            <div key={project.id} className="project-card">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-                <div className={`lg:col-span-7 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
+                <div className="lg:col-span-7">
                   <div className="aspect-[4/3] overflow-hidden bg-gray-50 group cursor-pointer">
                     <img 
                       src={project.image} 
@@ -60,7 +60,7 @@ const ProjectsSection = () => {
                     />
                   </div>
                 </div>
-                <div className={`lg:col-span-5 ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
+                <div className="lg:col-span-5">
                   <div className="space-y-6">
                     <div>
                       <p className="text-sm text-charcoal/50 uppercase tracking-wider font-medium mb-2">
