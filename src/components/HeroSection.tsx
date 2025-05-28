@@ -6,8 +6,7 @@ const HeroSection = () => {
           <div className="animate-fade-in">
             <div className="mb-8 overflow-hidden">
               <h1 className="text-6xl md:text-8xl font-light mb-2 text-charcoal tracking-tight leading-none animate-slide-in">
-                Godswill
-              </h1>
+            </h1>
               <h1 className="text-6xl md:text-8xl font-light mb-8 text-charcoal tracking-tight leading-none animate-slide-in" style={{
               animationDelay: '0.1s'
             }}>Godswill Anuo</h1>
