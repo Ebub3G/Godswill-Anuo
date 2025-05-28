@@ -62,7 +62,7 @@
   }
 
   .btn-primary-enhanced {
-    @apply bg-charcoal hover:bg-charcoal/90 text-white font-normal py-4 px-8 transition-all duration-300 inline-flex items-center justify-center border border-charcoal hover:shadow-lg hover:transform hover:-translate-y-1 group;
+    @apply bg-charcoal hover:bg-charcoal/90 text-white font-normal py-4 px-8 transition-all duration-300 inline-flex items-center justify-center border border-charcoal hover:shadow-lg hover:transform hover:-translate-y-1;
   }
   
   .btn-outline {
