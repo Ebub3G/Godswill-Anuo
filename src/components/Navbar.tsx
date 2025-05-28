@@ -24,18 +24,21 @@ const Navbar = () => {
   return (
     <nav 
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-6",
-        isScrolled ? "bg-white shadow-md py-4" : "bg-transparent"
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-8",
+        isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-6" : "bg-transparent"
       )}
     >
       <div className="container-section flex justify-between items-center">
-        <a href="#" className="text-xl font-medium text-charcoal tracking-wider hover:tracking-widest transition-all duration-300">
-          My Portfolio
+        <a href="#" className="text-2xl font-medium text-charcoal tracking-tight hover:tracking-wide transition-all duration-300 group">
+          <span className="relative">
+            My Portfolio
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-charcoal transition-all duration-300 group-hover:w-full"></span>
+          </span>
         </a>
         
         {/* Mobile menu button */}
         <button 
-          className="md:hidden text-charcoal"
+          className="md:hidden text-charcoal transition-transform duration-200 hover:scale-110"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? (
@@ -50,24 +53,24 @@ const Navbar = () => {
         </button>
         
         {/* Desktop menu */}
-        <ul className="hidden md:flex space-x-8">
-          <li><a href="#" className="nav-link">Home</a></li>
-          <li><a href="#about" className="nav-link">About</a></li>
-          <li><a href="#projects" className="nav-link">Projects</a></li>
-          <li><a href="#designs" className="nav-link">Designs</a></li>
-          <li><a href="#contact" className="nav-link">Contact</a></li>
+        <ul className="hidden md:flex space-x-12">
+          <li><a href="#" className="nav-link-enhanced">Home</a></li>
+          <li><a href="#about" className="nav-link-enhanced">About</a></li>
+          <li><a href="#projects" className="nav-link-enhanced">Projects</a></li>
+          <li><a href="#designs" className="nav-link-enhanced">Designs</a></li>
+          <li><a href="#contact" className="nav-link-enhanced">Contact</a></li>
         </ul>
       </div>
       
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg absolute top-full left-0 right-0 animate-fade-in">
-          <ul className="flex flex-col py-4">
-            <li><a href="#" className="nav-link block py-3 px-6" onClick={() => setMobileMenuOpen(false)}>Home</a></li>
-            <li><a href="#about" className="nav-link block py-3 px-6" onClick={() => setMobileMenuOpen(false)}>About</a></li>
-            <li><a href="#projects" className="nav-link block py-3 px-6" onClick={() => setMobileMenuOpen(false)}>Projects</a></li>
-            <li><a href="#designs" className="nav-link block py-3 px-6" onClick={() => setMobileMenuOpen(false)}>Designs</a></li>
-            <li><a href="#contact" className="nav-link block py-3 px-6" onClick={() => setMobileMenuOpen(false)}>Contact</a></li>
+        <div className="md:hidden bg-white/95 backdrop-blur-md shadow-lg absolute top-full left-0 right-0 animate-fade-in">
+          <ul className="flex flex-col py-6">
+            <li><a href="#" className="nav-link-mobile" onClick={() => setMobileMenuOpen(false)}>Home</a></li>
+            <li><a href="#about" className="nav-link-mobile" onClick={() => setMobileMenuOpen(false)}>About</a></li>
+            <li><a href="#projects" className="nav-link-mobile" onClick={() => setMobileMenuOpen(false)}>Projects</a></li>
+            <li><a href="#designs" className="nav-link-mobile" onClick={() => setMobileMenuOpen(false)}>Designs</a></li>
+            <li><a href="#contact" className="nav-link-mobile" onClick={() => setMobileMenuOpen(false)}>Contact</a></li>
           </ul>
         </div>
       )}
