@@ -58,11 +58,11 @@
   }
   
   .btn-primary {
-    @apply bg-charcoal hover:bg-charcoal/80 text-white font-normal py-3 px-6 transition-all duration-200 inline-flex items-center justify-center border border-charcoal;
+    @apply bg-charcoal hover:bg-charcoal/80 text-white font-normal py-3 px-6 transition-all duration-200 inline-flex items-center justify-center border border-charcoal hover:transform hover:scale-105;
   }
   
   .btn-outline {
-    @apply border border-charcoal text-charcoal hover:bg-charcoal hover:text-white font-normal py-3 px-6 transition-all duration-200 inline-flex items-center justify-center;
+    @apply border border-charcoal text-charcoal hover:bg-charcoal hover:text-white font-normal py-3 px-6 transition-all duration-200 inline-flex items-center justify-center hover:transform hover:scale-105;
   }
   
   .section-title {
@@ -75,5 +75,22 @@
   
   .nav-link {
     @apply px-0 py-2 text-charcoal/70 hover:text-charcoal transition-colors duration-200 font-normal;
+  }
+}
+
+@layer utilities {
+  .animate-slide-in {
+    animation: slide-in 0.8s ease-out both;
+  }
+
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }

@@ -24,13 +24,13 @@ const Navbar = () => {
   return (
     <nav 
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4",
-        isScrolled ? "bg-white shadow-md py-3" : "bg-transparent"
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-6",
+        isScrolled ? "bg-white shadow-md py-4" : "bg-transparent"
       )}
     >
       <div className="container-section flex justify-between items-center">
-        <a href="#" className="text-xl font-heading font-bold text-charcoal">
-          <span className="text-amber">D</span>esign<span className="text-amber">P</span>ortfolio
+        <a href="#" className="text-xl font-medium text-charcoal tracking-wider hover:tracking-widest transition-all duration-300">
+          My Portfolio
         </a>
         
         {/* Mobile menu button */}
@@ -50,7 +50,7 @@ const Navbar = () => {
         </button>
         
         {/* Desktop menu */}
-        <ul className="hidden md:flex space-x-1">
+        <ul className="hidden md:flex space-x-8">
           <li><a href="#" className="nav-link">Home</a></li>
           <li><a href="#about" className="nav-link">About</a></li>
           <li><a href="#projects" className="nav-link">Projects</a></li>
