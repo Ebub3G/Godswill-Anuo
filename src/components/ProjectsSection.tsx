@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const ProjectsSection = () => {
@@ -18,7 +17,7 @@ const ProjectsSection = () => {
       title: "Coffee Shop E-commerce",
       category: "E-commerce",
       description: "Online store for a local coffee shop with order management system and seamless checkout experience.",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=1470&auto=format&fit=crop",
+      image: "/lovable-uploads/918bab38-4bde-4449-aefd-fb9e05be9801.png",
       technologies: ["Next.js", "Stripe", "Sanity CMS"],
       link: "#",
       year: "2024"
@@ -28,7 +27,7 @@ const ProjectsSection = () => {
       title: "Fitness App Interface",
       category: "UI/UX Design",
       description: "Mobile app interface design for fitness tracking with intuitive user experience and engaging visual design.",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1470&auto=format&fit=crop",
+      image: "/lovable-uploads/edc5481c-45fb-40f6-99c3-d51bf8d640a3.png",
       technologies: ["Figma", "Adobe XD", "Principle"],
       link: "#",
       year: "2023"
