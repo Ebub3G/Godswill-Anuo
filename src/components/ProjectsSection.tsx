@@ -24,13 +24,13 @@ const ProjectsSection = () => {
     },
     {
       id: 3,
-      title: "Fitness App Interface",
-      category: "UI/UX Design",
-      description: "Mobile app interface design for fitness tracking with intuitive user experience and engaging visual design.",
+      title: "Modern Storyteller",
+      category: "Storytelling Platform",
+      description: "An immersive digital storytelling experience featuring interactive narratives, engaging visual design, and modern web technologies to captivate audiences.",
       image: "/lovable-uploads/edc5481c-45fb-40f6-99c3-d51bf8d640a3.png",
-      technologies: ["Figma", "Adobe XD", "Principle"],
-      link: "#",
-      year: "2023"
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      link: "https://modern-storyteller-site.lovable.app",
+      year: "2024"
     }
   ];
 
