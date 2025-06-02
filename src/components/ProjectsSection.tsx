@@ -24,12 +24,12 @@ const ProjectsSection = () => {
     },
     {
       id: 3,
-      title: "Modern Storyteller",
-      category: "Storytelling Platform",
-      description: "An immersive digital storytelling experience featuring interactive narratives, engaging visual design, and modern web technologies to captivate audiences.",
+      title: "Coach Sarah",
+      category: "Personal Coaching",
+      description: "Professional coaching website featuring personalized coaching services, client testimonials, and easy booking system for transformative life coaching experiences.",
       image: "/lovable-uploads/edc5481c-45fb-40f6-99c3-d51bf8d640a3.png",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      link: "https://modern-storyteller-site.lovable.app",
+      link: "https://coach-sarah.vercel.app",
       year: "2024"
     }
   ];
