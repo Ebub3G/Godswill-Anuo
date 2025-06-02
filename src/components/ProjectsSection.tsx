@@ -4,12 +4,12 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "Career Coach Portfolio",
+      title: "Modern Storyteller",
       category: "Web Development",
-      description: "A responsive One-Page Portfolio site for a career coach built with modern design principles and smooth interactions.",
+      description: "A modern storytelling platform featuring immersive narratives, interactive elements, and engaging visual design to captivate audiences.",
       image: "/lovable-uploads/52408f9e-3bc6-43ca-84a0-6173100314d6.png",
-      technologies: ["React", "Tailwind CSS", "Framer Motion"],
-      link: "#",
+      technologies: ["React", "Tailwind CSS", "TypeScript"],
+      link: "https://modern-storyteller-site.lovable.app",
       year: "2024"
     },
     {
