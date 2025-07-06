@@ -18,7 +18,7 @@ const ProjectsSection = () => {
       title: "Bella Vista Italian Restaurant",
       category: "Restaurant & Hospitality",
       description: "Authentic Italian restaurant website featuring menu showcase, online reservations, and captivating visuals that bring the taste of Italy to your screen.",
-      image: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1474&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1470&auto=format&fit=crop",
       technologies: ["React", "Next.js", "Tailwind CSS", "Reservation System"],
       link: "https://bella-vista-inky.vercel.app",
       year: "2024"
@@ -38,7 +38,7 @@ const ProjectsSection = () => {
       title: "Mr Banks Tips",
       category: "Sports & Betting",
       description: "Professional sports betting tips platform featuring expert analysis, live odds, news updates, and comprehensive betting strategies for sports enthusiasts.",
-      image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1470&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1470&auto=format&fit=crop",
       technologies: ["React", "Node.js", "MongoDB", "Real-time Data"],
       link: "https://mr-banks-tips.vercel.app",
       year: "2024"
