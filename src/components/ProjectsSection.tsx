@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const ProjectsSection = () => {
@@ -6,7 +5,7 @@ const ProjectsSection = () => {
     {
       id: 1,
       title: "Art Gallery - Elena Rodriguez",
-      category: "Art & Culture",
+      category: "Art & Culture", 
       description: "Elegant art gallery website showcasing contemporary artworks with sophisticated design, artist portfolios, and immersive viewing experiences for art enthusiasts.",
       image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?q=80&w=1470&auto=format&fit=crop",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
@@ -18,7 +17,7 @@ const ProjectsSection = () => {
       title: "Bella Vista Italian Restaurant",
       category: "Restaurant & Hospitality",
       description: "Authentic Italian restaurant website featuring menu showcase, online reservations, and captivating visuals that bring the taste of Italy to your screen.",
-      image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1470&auto=format&fit=crop",
+      image: "/lovable-uploads/639249f2-d05a-4618-a710-8ef7d1d0b17d.png",
       technologies: ["React", "Next.js", "Tailwind CSS", "Reservation System"],
       link: "https://bella-vista-inky.vercel.app",
       year: "2024"
@@ -38,7 +37,7 @@ const ProjectsSection = () => {
       title: "Mr Banks Tips",
       category: "Sports & Betting",
       description: "Professional sports betting tips platform featuring expert analysis, live odds, news updates, and comprehensive betting strategies for sports enthusiasts.",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1470&auto=format&fit=crop",
+      image: "/lovable-uploads/61a96f90-7de3-4921-b7e5-795c2ee64a81.png",
       technologies: ["React", "Node.js", "MongoDB", "Real-time Data"],
       link: "https://mr-banks-tips.vercel.app",
       year: "2024"

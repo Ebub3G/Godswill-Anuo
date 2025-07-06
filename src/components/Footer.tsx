@@ -27,7 +27,7 @@ const Footer = () => {
                   <span className="sr-only">Facebook</span>
                 </a>
                 {/* Instagram icon from Flaticon */}
-                <a href="#" className="text-gray-400 hover:text-amber transition-colors">
+                <a href="https://www.instagram.com/jaccbyag/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-amber transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -36,7 +36,7 @@ const Footer = () => {
                   <span className="sr-only">Instagram</span>
                 </a>
                 {/* X.com (formerly Twitter) icon */}
-                <a href="#" className="text-gray-400 hover:text-amber transition-colors">
+                <a href="https://x.com/jaccbyag" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-amber transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
                     <path d="M4 4l11.733 16h4.267l-11.733-16z"></path>
                     <path d="M4 20h4.267l11.733-16h-4.267z"></path>
@@ -57,7 +57,7 @@ const Footer = () => {
             
             <div>
               <h4 className="text-white font-medium mb-3">Contact</h4>
-              <a href="mailto:godswillanuo@gmail.com" className="text-gray-400 hover:text-amber transition-colors">godswillanuo@gmail.com</a>
+              <a href="mailto:jaccbyag@gmail.com" className="text-gray-400 hover:text-amber transition-colors">jaccbyag@gmail.com</a>
             </div>
           </div>
         </div>

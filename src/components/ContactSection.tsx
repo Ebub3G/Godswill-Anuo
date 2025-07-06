@@ -113,7 +113,7 @@ const ContactSection = () => {
           </form>
           
           <div className="mt-12 text-center">
-            <p className="text-charcoal/50 text-sm mb-2">godswillanuo@gmail.com</p>
+            <p className="text-charcoal/50 text-sm mb-2">jaccbyag@gmail.com</p>
           </div>
         </div>
       </div>
