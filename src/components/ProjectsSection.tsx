@@ -1,25 +1,26 @@
+
 import React from 'react';
 
 const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "Modern Storyteller",
-      category: "Web Development",
-      description: "A modern storytelling platform featuring immersive narratives, interactive elements, and engaging visual design to captivate audiences.",
-      image: "/lovable-uploads/52408f9e-3bc6-43ca-84a0-6173100314d6.png",
-      technologies: ["React", "Tailwind CSS", "TypeScript"],
-      link: "https://modern-storyteller-site.lovable.app",
+      title: "Art Gallery - Elena Rodriguez",
+      category: "Art & Culture",
+      description: "Elegant art gallery website showcasing contemporary artworks with sophisticated design, artist portfolios, and immersive viewing experiences for art enthusiasts.",
+      image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?q=80&w=1470&auto=format&fit=crop",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      link: "https://art-gallery-lake-ten.vercel.app",
       year: "2024"
     },
     {
       id: 2,
-      title: "Coffee Shop E-commerce",
-      category: "E-commerce",
-      description: "Online store for a local coffee shop with order management system and seamless checkout experience.",
-      image: "/lovable-uploads/918bab38-4bde-4449-aefd-fb9e05be9801.png",
-      technologies: ["Next.js", "Stripe", "Sanity CMS"],
-      link: "#",
+      title: "Bella Vista Italian Restaurant",
+      category: "Restaurant & Hospitality",
+      description: "Authentic Italian restaurant website featuring menu showcase, online reservations, and captivating visuals that bring the taste of Italy to your screen.",
+      image: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1474&auto=format&fit=crop",
+      technologies: ["React", "Next.js", "Tailwind CSS", "Reservation System"],
+      link: "https://bella-vista-inky.vercel.app",
       year: "2024"
     },
     {
@@ -27,9 +28,19 @@ const ProjectsSection = () => {
       title: "Coach Sarah",
       category: "Personal Coaching",
       description: "Professional coaching website featuring personalized coaching services, client testimonials, and easy booking system for transformative life coaching experiences.",
-      image: "/lovable-uploads/edc5481c-45fb-40f6-99c3-d51bf8d640a3.png",
+      image: "/lovable-uploads/3649d90d-ece6-4cb4-868a-300fa4604a18.png",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
       link: "https://coach-sarah.vercel.app",
+      year: "2024"
+    },
+    {
+      id: 4,
+      title: "Mr Banks Tips",
+      category: "Sports & Betting",
+      description: "Professional sports betting tips platform featuring expert analysis, live odds, news updates, and comprehensive betting strategies for sports enthusiasts.",
+      image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1470&auto=format&fit=crop",
+      technologies: ["React", "Node.js", "MongoDB", "Real-time Data"],
+      link: "https://mr-banks-tips.vercel.app",
       year: "2024"
     }
   ];
@@ -42,7 +53,7 @@ const ProjectsSection = () => {
             Selected Work
           </h2>
           <p className="text-xl text-charcoal/60 max-w-2xl">
-            A collection of projects that showcase my passion for creating meaningful digital experiences.
+            A diverse collection of projects showcasing expertise across different industries and technologies.
           </p>
         </div>
         
@@ -84,7 +95,9 @@ const ProjectsSection = () => {
                     </div>
                     <a 
                       href={project.link} 
-                      className="inline-flex items-center text-charcoal hover:text-charcoal/70 text-lg font-normal transition-all duration-300 group"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-charcoal hover:text-charcoal/70 text-lg font-normal transition-all duration-300 group relative"
                     >
                       View Project
                       <span className="ml-2 transition-transform duration-300 group-hover:translate-x-2">→</span>
