@@ -1,0 +1,156 @@
+/* Custom CSS Classes */
+.container-section {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+
+.btn-primary-enhanced {
+  @apply bg-[#1a1a1a] text-white hover:bg-[#2a2a2a] focus:ring-[#1a1a1a] hover:shadow-lg hover:scale-105 transition-all duration-300;
+}
+
+.btn-outline-enhanced {
+  @apply border-2 border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white focus:ring-[#1a1a1a] hover:shadow-lg hover:scale-105 transition-all duration-300;
+}
+
+.nav-link-enhanced {
+  @apply relative;
+}
+
+.nav-link-enhanced::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #1a1a1a;
+  transition: width 0.3s ease;
+}
+
+.nav-link-enhanced:hover::after {
+  width: 100%;
+}
+
+.section-title {
+  @apply text-4xl md:text-5xl font-montserrat font-light text-[#1a1a1a] leading-tight;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a2a2a;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Typography improvements */
+body {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 300; /* Light */
+}
+
+/* Montserrat Font Weight Classes */
+.font-montserrat-light {
+  font-weight: 300;
+}
+
+.font-montserrat-medium {
+  font-weight: 500;
+}
+
+.font-montserrat-semibold {
+  font-weight: 600;
+}
+
+.font-montserrat-bold {
+  font-weight: 700;
+}
+
+/* Focus states for accessibility */
+*:focus {
+  outline: 2px solid #1a1a1a;
+  outline-offset: 2px;
+}
+
+button:focus,
+a:focus {
+  outline: 2px solid #1a1a1a;
+  outline-offset: 2px;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .section-title {
+    @apply text-3xl md:text-4xl;
+  }
+}
+
+/* Animation delays for staggered effects */
+.animate-delay-100 {
+  animation-delay: 0.1s;
+}
+
+.animate-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-300 {
+  animation-delay: 0.3s;
+}
+
+.animate-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.animate-delay-500 {
+  animation-delay: 0.5s;
+}
